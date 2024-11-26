@@ -95,4 +95,5 @@ class Ball(Basic):
     def alive(self):
         # ============================================
         # TODO: Implement a service that returns whether the ball is alive or not
-        pass
+        if self.rect.bottom > 720:
+            return False
